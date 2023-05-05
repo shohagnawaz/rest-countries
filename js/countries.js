@@ -21,4 +21,35 @@ const getCountry = (country) => {
     `
 }
 
+// Option Two
+// const getCountry = ({name, flags}) => {
+//     return `
+//         <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src="${flags.png}">
+//         </div>
+//     `
+// }
+
+// Option One
+// const getCountry = (country) => {
+//     const {name, flags,} = country;
+//     return `
+//         <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src="${flags.png}">
+//         </div>
+//     `
+// }
+
+// Original Code
+// const getCountry = (country) => {
+//     return `
+//         <div class="country">
+//             <h2>${country.name.common}</h2>
+//             <img src="${country.flags.png}">
+//         </div>
+//     `
+// }
+
 loadCounters();
